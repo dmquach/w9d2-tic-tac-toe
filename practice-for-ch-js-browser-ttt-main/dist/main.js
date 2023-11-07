@@ -27,7 +27,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ttt
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nclass View {\n  constructor(game, el) {\n  }\n\n  setupBoard() {\n    \n  }\n\n  handleClick(e) {\n  }\n\n  makeMove(square) {\n  }\n\n  handleGameOver() {\n  }\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (View);\n\n\n//# sourceURL=webpack://browser-ttt/./src/ttt-view.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nclass View {\n  constructor(game, el) {\n  }\n\n  setupBoard() {\n    let grid = document.createElement('ul')\n    for(let i = 0; i < 3 ; i++){\n      for(let j = 0; j < 3; j++){\n        let point = document.createElement('li')\n        point.dataset.pos = [i,j]\n        grid.appendChild(point)\n      }\n    }    \n  }\n\n  handleClick(e) {\n  }\n\n  makeMove(square) {\n  }\n\n  handleGameOver() {\n  }\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (View);\n\n\n//# sourceURL=webpack://browser-ttt/./src/ttt-view.js?");
 
 /***/ }),
 
