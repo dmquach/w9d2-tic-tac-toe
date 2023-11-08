@@ -1,2 +1,28 @@
 /* Your code here */
+html, body, figure, figcaption, ul, li, h1 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    text-align: inherit;
+}
 
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 33px auto;
+    width: 100px;
+    border: 1px solid black;
+}
+
+li {
+    width: 33px;
+    height: 33px;
+    background: gray;
+    border: 1px black
+}
+
+li:hover {
+    background: yellow;
+}
